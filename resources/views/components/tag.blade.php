@@ -1,6 +1,9 @@
+{{-- @props(['tag', 'classes' => 'tag ', 'size' => 'medium']) --}}
+{{-- to use the global $tag variable passed in automatically thru the foreach, props needs to be fully removed --}}
+
 @php
 
-$classes = "tag";
+$classes = "tag ";
 $size = null;
 
 if ($size === 'smaller') {

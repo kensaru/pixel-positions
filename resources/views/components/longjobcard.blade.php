@@ -1,6 +1,8 @@
 {{-- pass the job in the <x-longjobcard/> using :$job, then come in here and accept the job as a prop --}}
 {{-- @props(['job']) --}}
 
+
+{{-- doesnt need prop to pass in job variable ... its already auto done thru foreach due to JobController data pass in --}}
 <article class="ljc">
             <figure>
                 <img src="{{ $job->url }}" alt="" class="ljc__logo">
