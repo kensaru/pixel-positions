@@ -1,0 +1,266 @@
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+/*? start of my custom css variables */
+
+:root {
+    /* Color Palette
+  a) color and hue are synonyms
+  b) tint is adding more white to make the color lighter
+  c) tone means adding grey to the color
+  d) shade is adding more black to make the color darker
+*/
+
+    --white: #ffffff40;
+    --lightgray: #d3d3d340;
+    --gray: #80808040;
+    --darkgray: darkgray;
+    --black: #40000000;
+
+    --primary: ;
+    --secondary: ;
+    --tertiary: ;
+
+    /* casing */
+    --lc: lowercase;
+    --cc: capitalize;
+    --uc: uppercase;
+
+    --normal: ;
+    --italic: ;
+    --bold: ;
+
+    /* Dimension Helpers */
+    --half: 0.5rem; /* 8px */
+    --one: 1rem; /* 16px */
+    --onehalf: 1.5rem; /* 24px */
+    --two: 2rem; /* 32px */
+    --twohalf: 2.5rem; /* 40px */
+    --three: 3rem; /* 48px */
+}
+
+*::before,
+*,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html {
+    font: inherit system-ui;
+    font-size: 20px; /*  default at start, delete once start working on typography */
+    text-align: center; /* default at start, possibly to delete once used grid/flex */
+    line-height: 1.125;
+    /* color-scheme: light dark; */
+}
+
+body {
+    height: 100vh;
+    height: 100dvh;
+    scroll-behavior: auto;
+    overflow: auto;
+    overflow-wrap: break-word;
+    background-color: var(--black);
+}
+
+img,
+label,
+input,
+textarea,
+select,
+button {
+    display: inline-block;
+}
+
+svg,
+img,
+picture,
+audio,
+video,
+canvas {
+    max-width: 100%; /* remove max-width: 100% & height:auto; if instead need to use width: 100%; */
+    vertical-align: middle; /* remove vertical-align: middle; if instead need to use display: block; */
+    font-style: oblique; /* for alt text */
+    /* aspect-ratio: 1/1; */
+}
+
+a,
+button,
+input[type="checkbox"],
+input[type="radio"] {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+ul {
+    list-style: none;
+}
+
+.hide {
+    display: none;
+}
+
+/*? end of my custom css variables */
+
+/*! desktop code starts here */
+
+* {
+    padding: 0.25rem; /* delete this when the layout is mostly done */
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid white;
+    margin-bottom: 12px;
+}
+
+.navLeft {
+}
+
+.navCenter {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
+}
+.navCenter > * {
+    flex: 1;
+}
+
+.navRight {
+}
+
+.colorBox {
+}
+
+.blueBox {
+}
+
+.whiteBox {
+}
+
+.main {
+    outline: 1px dotted greenyellow;
+    display: grid;
+    margin: 0 auto; /* could remove this and make body a grid with place-content:center;*/
+    gap: 1.5em;
+    width: 80%;
+}
+.main > * {
+    outline: 1px dotted saddlebrown;
+}
+
+.search__section {
+}
+
+/* how to do sliders / carousel / left and right scroll bar for cards in css */
+.sjcs {
+}
+
+.sjcContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    outline: 1px dotted fuchsia;
+    gap: 1.5em;
+}
+
+.sjc {
+    background-color: var(--white);
+    border-radius: 10%;
+    flex: 1 1 auto; /* refactor the auto using clamp() for the flex-basis */
+}
+
+.tags {
+}
+
+.tagContainer {
+}
+
+.ljcs {
+}
+
+.ljcContainer {
+    display: flex;
+    flex-flow: column wrap;
+    outline: 1px dotted fuchsia;
+    gap: 1.25em;
+}
+
+.ljc {
+    background-color: var(--white);
+    border-radius: 10%; /* flex:1 1 100%; */ /* 100% makes items stack. */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.ljc > figure {
+}
+
+.textArea {
+    display: flex;
+    flex-flow: column nowrap;
+    /* outline: 1px solid black; */
+    align-self: stretch;
+}
+
+.textArea > p {
+    /* outline: 1px solid black; */
+    margin-top: auto;
+}
+
+.ljcCategoriesAndTags {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/*! desktop code starts here */
+
+/** media queries below - laptop, tablet and phone code below */
+
+@media all and (max-width: 1800px) {
+    /*? laptop css inside here */
+}
+
+@media all and (max-width: 1200px) {
+    /*? tablet css inside here */
+}
+
+@media all and (max-width: 600px) {
+    /*? phone css inside here */
+}
+
+/** media queries above - laptop, tablet and phone code above */
+
+/* hover states, transforms, effects, container queries */
