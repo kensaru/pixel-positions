@@ -1,5 +1,5 @@
 {{-- pass the job in the <x-shortjobcard/> using :$job, then come in here and accept the job as a prop --}}
-@props(['job'])
+{{-- @props(['job']) --}}
 
 <article class="sjc">
             <span class="sjc__employer">{{ $job->employer->name }}</span>

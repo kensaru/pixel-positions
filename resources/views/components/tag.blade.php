@@ -1,8 +1,7 @@
-@props(['tag','size' =>'medium'])
-
 @php
 
-    $classes = "tag";
+$classes = "tag";
+$size = null;
 
 if ($size === 'smaller') {
     $classes .= " smaller"; //add classes to make tags smaller

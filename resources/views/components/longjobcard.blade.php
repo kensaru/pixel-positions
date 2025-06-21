@@ -1,6 +1,6 @@
 {{-- pass the job in the <x-longjobcard/> using :$job, then come in here and accept the job as a prop --}}
-@props(['job'])
- 
+{{-- @props(['job']) --}}
+
 <article class="ljc">
             <figure>
                 <img src="{{ $job->url }}" alt="" class="ljc__logo">
