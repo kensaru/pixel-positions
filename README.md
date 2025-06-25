@@ -64,3 +64,22 @@ function sanitizeform($data)
 	1. belongstomany tag
 1. Tags has
     1. belongstomany job
+
+
+
+# basic register/login system
+
+1. register
+    1. make create & store routes for registration controller
+1. verify
+1. login
+    1. make create, store & destroy routes for session controller 
+1. logout
+
+# utilize built-in middleware ... particularly auth, guest and can
+
+1. https://laravel.com/docs/12.x/middleware#middleware-aliases
+1. https://laravel.com/docs/12.x/routing#available-router-methods
+
+
+

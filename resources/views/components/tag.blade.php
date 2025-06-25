@@ -17,4 +17,4 @@ else {'what?';}
 
 @endphp
 
-<span class="{{ $classes }}">{{$tag->name}}</span>
+<a href="/tags/{{ strtolower($tag->name) }}" class="{{ $classes }}">{{ ucwords($tag->name) }}</a>
